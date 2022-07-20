@@ -31,3 +31,5 @@ The Project involves mainly 4 steps:-
                            Stemming
 
 4.Model Building :- In model building we check for all the Machiene Learning Algorithm and becuase it is an imbalance dataset we will choose the one which gives highest precision and comparable acuuracy. Here Multinomial Naive bayes gives the highest precision 1.0.The model is build in python 3.9 and gives 97.96% accuracy and 97.56% precision. 
+
+The Model is finally deployed on Heroku.com
