@@ -19,17 +19,49 @@ The Project involves mainly 4 steps:-
 1. Model Building
 2. Exploratory Data Analysis(EDA)
 3. Data/text Preprocessing:-
-
-                           convert into Lower Case
-                           
-                           Tokenization
-                           
-                           Removing special characters
-                           
-                           Removing stop words and punctuation
-                           
-                           Stemming
+   i)convert into Lower Case
+   
+   ii)Tokenization
+   
+   iii)Removing special characters
+   
+   iv)Removing stop words and punctuation
+   
+    v)Stemming
 
 4.Model Building :- In model building we check for all the Machiene Learning Algorithm and becuase it is an imbalance dataset we will choose the one which gives highest precision and comparable acuuracy. Here Multinomial Naive bayes gives the highest precision 1.0.The model is build in python 3.9 and gives 97.96% accuracy and 97.56% precision. 
 
 The Model is finally deployed on Heroku.com
+# Deployment
+Some additional files neede to be created for deployment
+
+setup.sh
+          
+          mkdir -p ~/.streamlit/
+
+          echo "\
+          [server]\n\
+          port = $PORT\n\
+          enableCORS = false\n\
+          headless = true\n\
+          \n\
+          " > ~/.streamlit/config.toml
+          
+requirements.txt
+
+          streamlit
+          nltk
+          sklearn     
+          
+nltk.txt
+
+         stopwords
+         punkt
+         
+.gitignore
+
+          venv
+          
+Procfile
+
+         web: sh setup.sh && streamlit run app.py
