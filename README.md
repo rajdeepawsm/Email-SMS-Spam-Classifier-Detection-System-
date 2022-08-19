@@ -2,7 +2,7 @@
 
 Bulk mails that	are	unnecessary	and	undesirable	can	be classified	as	Spam	Mails.The Email/SMS Spam Classifier uses Multinomial Naive Bayes Algorithm to predict whether a mail is a Spam or Not.The model is build in python 3.9 and gives 97.96% accuracy and 97.56% precision.
 
-The link of the porject website:- https://email-sms-spam-classifier-ml-p.herokuapp.com/
+The link of the project website:- https://email-sms-spam-classifier-ml-p.herokuapp.com/
 
 The link of the dataset:- https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 
